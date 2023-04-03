@@ -9,6 +9,6 @@ class Manager(Base):
     __tablename__ = "manager"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    firstname = Column(String(100))
-    lastname = Column(String(100))
+    first_name = Column(String(100))
+    last_name = Column(String(100))
     salary = Column(Float)

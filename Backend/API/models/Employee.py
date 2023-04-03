@@ -9,7 +9,7 @@ class Employee(Base):
     __tablename__ = "employee"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    firstname = Column(String(100))
-    lastname = Column(String(100))
-    salary = Column(Float)
+    first_name = Column(String(100))
+    last_name = Column(String(100))
     manager_id = Column(Integer)
+    salary = Column(Float)
