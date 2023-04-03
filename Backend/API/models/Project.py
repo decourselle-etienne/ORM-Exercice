@@ -4,11 +4,10 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class Manager(Base):
+class Project(Base):
 
-    __tablename__ = "manager"
+    __tablename__ = "project"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    firstname = Column(String(100))
-    lastname = Column(String(100))
-    salary = Column(Float)
+    name = Column(String(100))
+    reference = Column(String(100))
