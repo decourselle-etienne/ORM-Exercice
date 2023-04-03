@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class Employee(Base):
+class Manager(Base):
 
     __tablename__ = "employee"
 
@@ -12,4 +12,3 @@ class Employee(Base):
     firstname = Column(String(100))
     lastname = Column(String(100))
     salary = Column(Float)
-    manager_id = Column(Integer)
